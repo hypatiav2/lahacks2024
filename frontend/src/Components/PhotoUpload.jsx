@@ -3,7 +3,8 @@ import getChallenge from '../gemini';
 
 
 export default function Upload() {
-    const prompt = run();
+    const prompt = getPrompt();
+    document.getElementById("challenge").innerText = prompt;
     return (
     <div className="App">
         <input
@@ -16,7 +17,7 @@ export default function Upload() {
     );
 }
 
-async function run() {
+async function getPrompt() {
     console.log("fetching challenge");
     let prompt = await getChallenge();
     console.log(prompt);

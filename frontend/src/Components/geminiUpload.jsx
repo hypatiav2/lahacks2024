@@ -36,5 +36,7 @@ export default async function CheckPhoto(challenge) {
     const response = await result.response;
     const text = response.text();
     console.log(text);
+    document.getElementById("status").innerText = text;
+
   }
   
