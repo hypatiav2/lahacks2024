@@ -1,5 +1,6 @@
 //import React, { useEffect, useState } from 'react';
 import HomeButton from './Components/HomeButton';
+
 import './HomeScreen.css';
 import grassHopper from './assets/Group.png'
 import grass from "./assets/grass.png"
@@ -48,7 +49,6 @@ export default function HomeScreen() {
     handleGetPocketPrompt();
   }, []);
   */
-
   const name = 'melody';
 
   return (
