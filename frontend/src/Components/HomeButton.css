@@ -1,0 +1,16 @@
+/*h1{
+    margin: 0 10px; /* Add margin to create space between buttons
+}*/
+
+.description{
+    width: 80px;
+    border: 2px solid #FFF; /* Add border to each home button */
+    border-radius: 20px;
+    padding: 20px 40px;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-right: 10px;
+    text-align: center;
+    /* resize: fit-content; */
+    background-color: #FFF;
+}
