@@ -11,6 +11,7 @@ function App() {
   return (
     <>
     <HomeScreen />
+    
     <Upload />
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
