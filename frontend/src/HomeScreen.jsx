@@ -1,5 +1,6 @@
 //import React, { useEffect, useState } from 'react';
 import HomeButton from './Components/HomeButton';
+import run from './gemini';
 
 // const styles = StyleSheet.create({
 //   container: {
@@ -46,7 +47,6 @@ export default function HomeScreen() {
   }, []);
   */
   const name = 'jasmine';
-
   return (
     <div>
       <h1>{name},</h1>
