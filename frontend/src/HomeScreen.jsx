@@ -1,4 +1,5 @@
-// import React, { useEffect, useState } from 'react';
+//import React, { useEffect, useState } from 'react';
+import HomeButton from './Components/HomeButton';
 
 // const styles = StyleSheet.create({
 //   container: {
@@ -44,8 +45,23 @@ export default function HomeScreen() {
     handleGetPocketPrompt();
   }, []);
   */
+  const name = 'jasmine';
 
   return (
-    <h1>LA Hacks is fun!</h1>
+    <div>
+      <h1>{name},</h1>
+      <h3>its time to touch grass.</h3>
+      <button>begin grass touching</button>
+      <h1>streak:</h1>
+      <HomeButton 
+  
+        description = "score: 100"
+      />
+      <HomeButton 
+   
+        description = "friend"
+      />
+      
+    </div>
   );
 }
