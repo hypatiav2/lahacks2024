@@ -1,6 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
-import HomeButton from './Components/HomeButton';
 import mapboxgl from 'mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
+import './DestinationScreen.css'
+import './Components/TimerWithProgressBar'; // Adjust the path if necessary
+import TimerWithProgressBar from './Components/TimerWithProgressBar';
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibGF2aW5pYWxlaSIsImEiOiJjbHY3dXplOGYwM2U4MnFudHR5MjA0bTk4In0.ymT5DfEXRZHV4EFytkCLbA';
 
@@ -8,9 +10,9 @@ export default function DestinationScreen() {
 
     const mapContainer = useRef(null);
   const map = useRef(null);
-  const [lng, setLng] = useState(-70.9);
-  const [lat, setLat] = useState(42.35);
-  const [zoom, setZoom] = useState(9);
+  const [lng, setLng] = useState(-118.444);
+  const [lat, setLat] = useState(34.072);
+  const [zoom, setZoom] = useState(16);
 
   useEffect(() => {
     if (map.current) return; // initialize map only once
@@ -25,9 +27,10 @@ export default function DestinationScreen() {
   return (
     <div>
        <h1 className="title">destination</h1>
-       <div className="map"></div>
        <div ref={mapContainer} className="map-container" />
-    <button className="hereButton">im here</button>
+       <div className="white-rectangle"></div>
+       <TimerWithProgressBar initTime={120} />
+       <button className="hereButton">im here</button>
     </div>
   );
 }

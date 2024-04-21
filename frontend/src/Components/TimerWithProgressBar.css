@@ -1,0 +1,28 @@
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.progress-bar-back {
+    width: 100%;
+    background-color: #7A5452; /* brown */
+    height: 30px;
+    border-radius: 5px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #B0D4B0; /* green */
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+.time-text {
+    position: absolute;
+    color: #000;
+    right: 0;
+    top: 550px;
+    padding-right: 50px;
+}
