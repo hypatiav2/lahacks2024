@@ -38,12 +38,15 @@ const PushNotificationComponent = () => {
             new Notification("Grasshopper", {
             body: "Time to touch grass!",
             icon: 'https://touchgrass-a07f7.web.app/gh.svg',
+            data: {
+                url: '/map' // Include the URL in the data property
+              }
             });
         
         };
         // Set up interval to log message every 10 seconds
                 // Schedule notifications every 1 minute
-        const intervalId = setInterval(showNotification, 60 * 1000);
+        const intervalId = setInterval(showNotification, 3 * 60 * 1000);
 
         // Clean up interval when component unmounts
         return () => clearInterval(intervalId);

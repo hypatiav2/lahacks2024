@@ -10,6 +10,7 @@ import LeaderboardBlock from './Components/LeaderboardBlock';
 
 export default function LeaderScreen() {
     return(
+        <body>
         <div className='wholeScreen'>
             <div class='homeContainer'>
                 <img src={home} className='homeIcon' />
@@ -39,6 +40,6 @@ export default function LeaderScreen() {
                 </div>
             </div>
         </div>
-
+        </body>
     )
 }

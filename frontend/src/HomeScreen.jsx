@@ -5,12 +5,11 @@ import grassHopper from './assets/Group.png'
 import grass from "./assets/grass.png"
 import { Link } from 'react-router-dom';
 
-import PushNotificationComponent from './Components/notifs'
-
 export default function HomeScreen() {
   const name = 'melody';
 
   return (
+    <body>
       <div className="container">
         <div className='headline'>
           <img src={grassHopper} alt="Image" className='GrassHopper' />
@@ -33,7 +32,8 @@ export default function HomeScreen() {
           </Link>
           <HomeButton description="friends" className="HomeButton" />
         </div> {/* Close HomeButtonContainer div */}
-        <PushNotificationComponent />
+        
       </div>
+    </body>
   )
 };
