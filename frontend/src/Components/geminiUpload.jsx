@@ -20,7 +20,7 @@ async function fileToGenerativePart(file) {
   
 export default async function CheckPhoto(challenge, setContent) {
     let prompt = await challenge;
-    let full_prompt = "In a single word answer, either Success or Failure, does this picture successfully accomplish the photo scavenger hunt prompt: " + prompt;
+    let full_prompt = "In a single word answer, either 'success!' or 'failure', does this picture successfully accomplish the photo scavenger hunt prompt: " + prompt + "if the person is successful then say they have '+25 points'";
     
     console.log(full_prompt);
 
