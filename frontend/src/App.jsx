@@ -5,6 +5,7 @@ import './App.css'
 //import DestinationScreen from './DestinationScreen'
 import SignUpScreen from './SignUpScreen'
 import HomeScreen from './HomeScreen'
+
 import { Route, Routes } from "react-router-dom";
 
 
@@ -17,6 +18,7 @@ function App() {
 				<Route path="/" element={<SignUpScreen />} />
 				<Route path="home" element={<HomeScreen />} />
     </Routes>
+
     </>
   )
 }
