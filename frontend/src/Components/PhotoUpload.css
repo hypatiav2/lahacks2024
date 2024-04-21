@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+.challengeText{
+  font-size: 18px;
+  font-family: 'Lato';
+  line-height: 25px;
+  text-align: left;
+  text-transform: lowercase;
+  margin-top: -10px;
+}
+
+.imageAlign{
+  display: flex;
+  justify-content: center;
+}
+
+.image img{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.image{
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 7px solid #7A5452; /* Adjust border width and color */
+}
+
+.getChallenge{
+  font-size: 18px;
+  background-color: #7A5452;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Lato';
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.chooseFileButton{
+  font-size: 18px;
+  font-family: 'Lato';
+  margin-top: 20px;
+  background-color: #004643;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.uploadButton{
+  margin-left: 15px;
+  font-size: 18px;
+  background-color: #004643;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Lato';
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.checkChallenge{
+  font-size: 30px;
+  text-transform: lowercase;
+}
