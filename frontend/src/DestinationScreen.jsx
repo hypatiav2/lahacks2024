@@ -33,7 +33,7 @@ export default function DestinationScreen() {
         </div>
        <div ref={mapContainer} className="map-container" />
        <div className="white-rectangle"></div>
-       <TimerWithProgressBar initTime={120} />
+       <TimerWithProgressBar initTime={30} />
        <button className="hereButton">im here</button>
     </div>
   );
