@@ -5,8 +5,9 @@ import './App.css'
 //import DestinationScreen from './DestinationScreen'
 import SignUpScreen from './SignUpScreen'
 import HomeScreen from './HomeScreen'
-
 import { Route, Routes } from "react-router-dom";
+import LeaderScreen from './LeaderScreen'
+import Upload from './Components/PhotoUpload'
 
 
 function App() {
