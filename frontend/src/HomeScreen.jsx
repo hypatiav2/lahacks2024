@@ -1,6 +1,10 @@
 //import React, { useEffect, useState } from 'react';
 import HomeButton from './Components/HomeButton';
 
+import './HomeScreen.css';
+import grassHopper from './assets/Group.png'
+import grass from "./assets/grass.png"
+
 // const styles = StyleSheet.create({
 //   container: {
 //     flex: 1,
@@ -29,21 +33,7 @@ import HomeButton from './Components/HomeButton';
 //   },
 // });
 export default function HomeScreen() {
-  /* const [pocketPrompt, setPocketPrompt] = useState('');
- 
-   const handleGetPocketPrompt = async () => {
-     try {
-       const randomPocketPrompt = await axios.get(`${process.env.EXPO_PUBLIC_SERVER_URL}/pocketPrompt/get`, { timeout: 20000 });
-       setPocketPrompt(randomPocketPrompt.data);
-     } catch (err) {
-       console.log(err);
-     }
-   };
- 
-   useEffect(() => {
-     handleGetPocketPrompt();
-   }, []);
-   */
+
    const name = 'melody';
  
    return (
@@ -70,3 +60,4 @@ export default function HomeScreen() {
      </body>
    )
  };
+
