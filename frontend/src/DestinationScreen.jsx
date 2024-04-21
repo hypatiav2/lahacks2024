@@ -50,7 +50,6 @@ export default function DestinationScreen() {
   });
 
 
-
   return (
     <div>
         <div className='headline'>

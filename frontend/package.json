@@ -19,6 +19,7 @@
     "react-leaflet": "^4.2.1",
     "react-leaflet-cluster": "^2.1.0",
     "react-progress-bar-timer": "^0.3.4",
+    "react-router-dom": "^6.22.3",
     "react-scripts": "^4.0.3"
   },
   "devDependencies": {

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body{
+    background-color: #B0D4B0;
+ 
+}
+
+.wholePage{
+    background-color: #FFF;
+    padding: 100px 15px 100px 15px;
+    border-radius: 15%;
+    margin-bottom:80px;
+    margin-right: 40px;
+}
+
+.welcome{
+    padding-right: 40px;
+    color: #004643;
+    font-family: 'Lato';
+}
+
+.GrassHopper{
+    width : 300px;
+    height: auto;
+    /* padding-right: 30px; */
+}
+
+.inputContainer{
+    padding-top: 20px;
+    display: flex;
+    justify-content: left;
+    border-bottom: 1px solid #ccc;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.inputContainer input{
+    border: 0;
+    background: transparent;
+    color: #004643;
+    font-size: 18px; 
+    padding-left: -30px;
+}
+
+
+.SignUp{
+    margin-top: 40px;
+    padding: 1px 10px 5px 10px;
+    margin-right: 40px;
+    background-color: #004643;
+}
