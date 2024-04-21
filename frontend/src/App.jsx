@@ -11,11 +11,10 @@ function App() {
   return (
     <>
     <HomeScreen />
-    
+    <h3 id="challenge"></h3>
+    <h3 id="status"></h3> 
     <Upload />
 
-    <h3 id="challenge"></h3>
-    <h3 id="status"></h3>
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

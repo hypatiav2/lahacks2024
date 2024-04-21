@@ -18,9 +18,9 @@ async function fileToGenerativePart(file) {
   
 
   
-export default async function CheckPhoto(challenge) {
+export default async function CheckPhoto(challenge, setContent) {
     let prompt = await challenge;
-    let full_prompt = "Does this picture successfully accomplish the photo scavenger hunt prompt: " + prompt;
+    let full_prompt = "In a single word answer, either Success or Failure, does this picture successfully accomplish the photo scavenger hunt prompt: " + prompt;
     
     console.log(full_prompt);
 
@@ -36,7 +36,7 @@ export default async function CheckPhoto(challenge) {
     const response = await result.response;
     const text = response.text();
     console.log(text);
-    document.getElementById("status").innerText = text;
+    setContent(text)
 
   }
   
