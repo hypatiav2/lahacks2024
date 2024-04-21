@@ -32,7 +32,6 @@ import PushNotificationComponent from './Components/notifs'
 //     fontSize: 20,
 //   },
 // });
-
 export default function HomeScreen() {
  /* const [pocketPrompt, setPocketPrompt] = useState('');
 
