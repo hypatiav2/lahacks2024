@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import HomeScreen from './HomeScreen';
-import { Link } from "react-router-dom";
-//import './SignUpScreen.css'; // Import your CSS file for styling
+import { Link } from 'react-router-dom';
+import GrassHopper from './assets/Group1.png';
+import './SignUpScreen.css';
 
 function SignUpScreen() {
   const [firstName, setFirstName] = useState('');
@@ -82,39 +83,42 @@ function SignUpScreen() {
 
 
   return (
-    <div>
-      <h1>welcome</h1>
-      <div className="inputContainer">
-        <input
-          type="text"
-          className="textfields"
-          onChange={(e) => setFirstName(e.target.value)}
-          value={firstName}
-          placeholder="first name"
-        />
-      </div>
-      <div className="inputContainer">
-        <input
-          type="email"
-          className="textfields"
-          onChange={(e) => setEmail(e.target.value)}
-          value={email}
-          placeholder="email"
+    <body className="signUp">
+      <div className = 'wholePage'>
+        <img src={GrassHopper} className='GrassHopper' />
+        {/* <h1 className = 'welcome' >welcome</h1> */}
+        <div className="inputContainer">
+          <input
+            type="text"
+            className="firstName"
+            onChange={(e) => setFirstName(e.target.value)}
+            value={firstName}
+            placeholder="first name"
           />
         </div>
         <div className="inputContainer">
           <input
-            type={bool ? 'text' : 'password'}
-            className="textfields"
-            onChange={(e) => handleChangePassword(e.target.value)}
-            value={hiddenPassword}
-            placeholder="password"
-          />
+            type="email"
+            className="email"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+            placeholder="email"
+            />
         </div>
-        <Link to="/home">
-          <button onClick={handleSignUp}>sign up</button>
-        </Link>
+        <div className="inputContainer">
+            <input
+              type={bool ? 'text' : 'password'}
+              className="password"
+              onChange={(e) => handleChangePassword(e.target.value)}
+              value={hiddenPassword}
+              placeholder="password"
+            />
+        </div>
+          <Link to="/home">
+            <button className="SignUp" onClick={handleSignUp}>sign up</button>
+          </Link>
       </div>
+    </body>
     );
   }
   
