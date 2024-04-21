@@ -15,7 +15,7 @@ export default function DestinationScreen() {
   const map = useRef(null);
   const [lng, setLng] = useState(-118.440);
   const [lat, setLat] = useState(34.075);
-  const [zoom, setZoom] = useState(16);
+  const [zoom, setZoom] = useState(15);
 
   useEffect(() => {
     if (map.current) return;
@@ -44,10 +44,13 @@ export default function DestinationScreen() {
       setZoom(map.current.getZoom().toFixed(1));
     });
 
+
     const marker = new mapboxgl.Marker({
       color: "#ffa500"
-  }).setLngLat([-118.4382, 34.0778])
+  }).setLngLat([-118.4365, 34.0804])
       .addTo(map.current);
+
+      map.current.scrollZoom.disable();
 
   });
 
@@ -56,12 +59,13 @@ export default function DestinationScreen() {
     <div>
         <div className='headline'>
           <img src={earthIcon} alt="Image" className='earthIcon' />
-          <h1 className="title">destination</h1>
+          <div className="title">destination:</div>
         </div>
+        <div className="dest">sculpture garden</div>
        
       <div ref={mapContainer} className="map-container" />
       
-       <div className="loc-data"> Longitude: {lng} | Latitude: {lat} | Zoom: {zoom} </div>
+       <div className="loc-data">longitude: {lng} | latitude: {lat} | zoom: {zoom} </div>
        <TimerWithProgressBar initTime={30} />
        <Link to="/challenge">
           <button className="hereButton">im here</button>

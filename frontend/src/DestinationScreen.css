@@ -8,15 +8,23 @@
 }
 
 .title {
+  padding-top: 20px;
   padding-left: 10px;
   text-align: left;
   color: #004643;
   font-size: 32pt;
 }
 
+.dest {
+  text-align: right;
+  color: #004643;
+  font-size: 20pt;
+  margin-bottom: 10px;
+}
+
 .headline{
   display: flex;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .map-container {
@@ -26,7 +34,7 @@
 .mapboxgl-ctrl-geolocate {
   background-color: #7A5452;
   position: absolute;
-  top: 175px;
+  top: 190px;
   right: 45px;
   padding-top: 25px;
   z-index: 1;
@@ -54,7 +62,6 @@
   margin-top: 25px;
   height: 50px;
   justify-content: center;
-  /* padding-right: 200px; */
 }
 
 body{
