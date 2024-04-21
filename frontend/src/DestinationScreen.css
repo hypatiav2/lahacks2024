@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title {
+  padding-left: 10px;
+  text-align: left;
+  color: #004643;
+  font-size: 32pt;
+}
+
+.headline{
+  display: flex;
+  margin-top: 30px;
+}
+
+.map-container {
+  height: 300px;
+}
+
+.mapboxgl-ctrl-geolocate {
+  background-color: #7A5452;
+  position: absolute;
+  top: 175px;
+  right: 45px;
+  padding-top: 25px;
+  z-index: 1;
+}
+
+.hereButton {
+  margin-top: 40px;
+  color: #fff;
+  background-color: #7A5452;
+  height: 75px;
+  width: 200px;
+  font-size: 17pt;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.loc-data {
+  color: #004643;
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.earthIcon{
+  margin-top: 25px;
+  height: 50px;
+  justify-content: center;
+  /* padding-right: 200px; */
+}
+
+body{
+  background-color: #fff;
+  font-family: 'Lato';
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
