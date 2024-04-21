@@ -5,8 +5,9 @@
     display: flex;
     margin-bottom: 25px;
     color: #004643;
-    background-color: #B0D4B0;
-    padding: 0px 18px 0px 18px;
+    background-color: #ffffff;
+    padding-left: 18px;
+    padding-right: 18px;
     width: auto;
     border-radius: 20px;
     font-weight: 900;

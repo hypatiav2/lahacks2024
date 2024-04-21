@@ -1,16 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-body{
-    background-color: #B0D4B0;
- 
-}
-
 .wholePage{
     background-color: #FFF;
     padding: 100px 15px 100px 15px;
-    border-radius: 15%;
-    margin-bottom:80px;
-    margin-right: 40px;
+    border-radius: 20px;
 }
 
 .welcome{
@@ -40,12 +33,26 @@ body{
     color: #004643;
     font-size: 18px; 
     padding-left: -30px;
+    font-family: 'Lato';
 }
 
+.alignSignUp{
+    display: flex;
+    justify-content: center;
+}
 
 .SignUp{
     margin-top: 40px;
-    padding: 1px 10px 5px 10px;
-    margin-right: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
     background-color: #004643;
+    color: #ffffff;
+    font-family: 'Lato';
+    font-weight: 800;
+    font-size: 16px;
 }
+
+

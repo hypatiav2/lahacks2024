@@ -9,14 +9,10 @@
     top: 10px;
     right: 10px;
     position: fixed;
-    width: 20px;
+    width: 40px;
     height: auto;
     margin-right: auto;
 
-}
-
-body{
-    background-color: #FFF;
 }
 
 .Header{
@@ -26,7 +22,7 @@ body{
 .leaderBoardIcon{
     width: auto;
     height: 60px;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-right: 5px;
     padding-bottom: 30px;
 }
