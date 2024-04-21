@@ -39,10 +39,12 @@ const PushNotificationComponent = () => {
             body: "Time to touch grass!",
             icon: 'https://touchgrass-a07f7.web.app/gh.svg',
             });
+
+            console.log("Sending notification");
         
         };
         // Set up interval to log message every 10 seconds
-                // Schedule notifications every 1 minute
+        // Schedule notifications every 1 minute
         const intervalId = setInterval(showNotification, 60 * 1000);
 
         // Clean up interval when component unmounts
