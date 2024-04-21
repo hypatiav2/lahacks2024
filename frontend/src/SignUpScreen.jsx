@@ -7,6 +7,7 @@ import { useContext } from 'react'
 import { Namecontext } from './App'
 import { Link, useNavigate } from 'react-router-dom';
 import GrassHopper from './assets/Group1.png';
+
 import './SignUpScreen.css';
 
 function SignUpScreen() {
@@ -16,10 +17,6 @@ function SignUpScreen() {
   const [password, onChangePassword] = useState('');
   const [hiddenPassword, onChangeHiddenPassword] = useState('');
   const [bool, setBool] = useState(false);
-//   const validateEmail = (text) => {
-//     const reg = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w\w+)+$/;
-//     return reg.test(text);
-//   };
 
   const handleChangePassword = (newText) => {
     const lastLetter = newText.slice(-1);
@@ -42,6 +39,12 @@ function SignUpScreen() {
     onChangeHiddenPassword(newTextWithDots);
   };
 
+  const handleSignUp = async () => {
+    setFirstName('');
+    setEmail('');
+    onChangePassword('');
+  };
+
   // const checkInputs = () => {
   //   if (email === '') {
   //     alert('Please enter an email to proceed');
@@ -56,6 +59,7 @@ function SignUpScreen() {
   //   }
   //   return false;
   // };
+
 
 
   const handleSignUp = async (e) => {
@@ -78,7 +82,6 @@ function SignUpScreen() {
     <div className="signUp">
       <div className = 'wholePage'>
         <img src={GrassHopper} className='GrassHopper' />
-        {/* <h1 className = 'welcome' >welcome</h1> */}
         <div className="inputContainer">
           <input
             type="text"
@@ -106,9 +109,11 @@ function SignUpScreen() {
               placeholder="password (7+ chars)"
             />
         </div>
+        <div className="alignSignUp">
           <Link to="/home">
             <button className="SignUp" onClick={handleSignUp}>sign up</button>
           </Link>
+        </div>
       </div>
     </div>
     );

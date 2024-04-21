@@ -13,7 +13,7 @@
 
 .progress-bar-fill {
     height: 100%;
-    background-color: #B0D4B0; /* green */
+    background-color: #ffffff; /* white */
     border-radius: 5px;
     transition: width 0.5s ease-in-out;
 }

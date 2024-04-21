@@ -13,7 +13,7 @@ export default function LeaderboardBlock(props){
 }
 
 LeaderboardBlock.propTypes = {
-    number: PropTypes.func.isRequired,
-    name: PropTypes.func.isRequired,
-    point: PropTypes.func.isRequired
+    number: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    point: PropTypes.string.isRequired
   };
