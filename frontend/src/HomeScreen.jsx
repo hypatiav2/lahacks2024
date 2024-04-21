@@ -1,7 +1,7 @@
 //import React, { useEffect, useState } from 'react';
 import HomeButton from './Components/HomeButton';
 import './HomeScreen.css';
-import grassHopper from './assets/grasshopper.png'
+import grassHopper from './assets/GrassHopper.png'
 import grass from "./assets/grass.png"
 import friends from "./assets/friendsicon.png"
 import { Link } from 'react-router-dom';
@@ -17,8 +17,9 @@ export default function HomeScreen() {
       <div className='headline'>
         <img src={grassHopper} alt="Image" className='GrassHopper' />
       </div>
-      <h1 className='homeName'>{name},</h1>
+      <h1 className='homeName'>{firstName},</h1>
       <h3 className='slogan'>it's time to touch grass.</h3>
+      
       <Link to="/map">
         <button className='touchGrass'>begin grass touching</button>
       </Link>
@@ -34,11 +35,6 @@ export default function HomeScreen() {
         <Link to="/leaderboard">
           <HomeButton description="score: 100" className="HomeButton" />
          </Link>
-        <h1 className='name'>{firstName},</h1>
-        <h3 className='slogan'>it's time to touch grass.</h3>
-        <Link to="/map">
-          <button className='touchGrass'>begin grass touching</button>
-        </Link>
           <HomeButton description="friends" className="HomeButton" />
       </div> {/* Close HomeButtonContainer div */}
       

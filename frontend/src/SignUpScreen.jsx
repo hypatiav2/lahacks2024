@@ -39,12 +39,6 @@ function SignUpScreen() {
     onChangeHiddenPassword(newTextWithDots);
   };
 
-  const handleSignUp = async () => {
-    setFirstName('');
-    setEmail('');
-    onChangePassword('');
-  };
-
   // const checkInputs = () => {
   //   if (email === '') {
   //     alert('Please enter an email to proceed');
