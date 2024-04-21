@@ -9,7 +9,6 @@ import HomeScreen from './HomeScreen'
 import DestinationScreen from './DestinationScreen'
 import { Route, Routes } from "react-router-dom";
 import LeaderScreen from './LeaderScreen'
-import Upload from './Components/PhotoUpload'
 
 
 function App() {
