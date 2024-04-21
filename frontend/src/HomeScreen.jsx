@@ -4,9 +4,12 @@ import './HomeScreen.css';
 import grassHopper from './assets/Group.png'
 import grass from "./assets/grass.png"
 import { Link } from 'react-router-dom';
+import { useContext } from 'react'
+import { Namecontext } from './App'
+
 
 export default function HomeScreen() {
-  const name = 'melody';
+  const { firstName, setFirstName } = useContext(Namecontext);
 
   return (
     <body>
@@ -14,7 +17,7 @@ export default function HomeScreen() {
         <div className='headline'>
           <img src={grassHopper} alt="Image" className='GrassHopper' />
         </div>
-        <h1 className='name'>{name},</h1>
+        <h1 className='name'>{firstName},</h1>
         <h3 className='slogan'>it's time to touch grass.</h3>
         <Link to="/map">
           <button className='touchGrass'>begin grass touching</button>

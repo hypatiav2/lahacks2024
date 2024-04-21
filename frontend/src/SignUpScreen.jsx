@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import HomeScreen from './HomeScreen';
-import { Link } from 'react-router-dom';
+import { auth } from './firebase'; // Import Firebase Authentication module
+import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { useContext } from 'react'
+import { Namecontext } from './App'
+import { Link, useNavigate } from 'react-router-dom';
 import GrassHopper from './assets/Group1.png';
 import './SignUpScreen.css';
 
 function SignUpScreen() {
-  const [firstName, setFirstName] = useState('');
+  const navigate = useNavigate();
+  const { firstName , setFirstName} = useContext(Namecontext);
   const [email, setEmail] = useState('');
   const [password, onChangePassword] = useState('');
   const [hiddenPassword, onChangeHiddenPassword] = useState('');
   const [bool, setBool] = useState(false);
-
 //   const validateEmail = (text) => {
 //     const reg = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w\w+)+$/;
 //     return reg.test(text);
@@ -53,34 +57,22 @@ function SignUpScreen() {
   //   return false;
   // };
 
-  const handleSignUp = async () => {
-    // if (!checkInputs()) {
-    //   return;
-    // }
-    setFirstName('');
-    setEmail('');
-    onChangePassword('');
-    //window.navigate('/home');
-    // try {
-    //   const userData = {
-    //     email,
-    //     password,
-    //   };
-    //   const res = await axios.post(`${process.env.REACT_APP_SERVER_URL}/user/post`, userData); // Adjust server URL
-    //   if (res.data.error) {
-    //     console.error(res.data.error);
-    //   } else {
-    //     const userId = res.data._id;
-    //     // Adjust storage mechanism as needed for web
-    //     localStorage.setItem('userId', userId);
-    //     navigation.navigate('Home');
-    //   }
-    // } catch (err) {
-    //   console.log(err.message);
-    // }
-    //navigation.navigate('Home');
-  };
 
+  const handleSignUp = async (e) => {
+    e.preventDefault();
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((user) => {
+        // Signed up 
+        console.log("Success signing up ", firstName);
+        navigate('/home');
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode,errorMessage);
+        alert("Error, please try again");
+      });
+  };
 
   return (
     <div className="signUp">
@@ -111,7 +103,7 @@ function SignUpScreen() {
               className="password"
               onChange={(e) => handleChangePassword(e.target.value)}
               value={hiddenPassword}
-              placeholder="password"
+              placeholder="password (7+ chars)"
             />
         </div>
           <Link to="/home">
