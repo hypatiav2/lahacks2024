@@ -37,6 +37,7 @@ const PushNotificationComponent = () => {
         const showNotification = () => {
             new Notification("Grasshopper", {
             body: "Time to touch grass!",
+            icon: 'https://touchgrass-a07f7.web.app/gh.svg',
             });
         
         };
