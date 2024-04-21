@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+.block{
+    display: flex;
+    margin-bottom: 25px;
+    color: #004643;
+    background-color: #B0D4B0;
+    padding: 0px 18px 0px 18px;
+    width: auto;
+    border-radius: 20px;
+    font-weight: 900;
+    font-family: 'Lato';
+}
+
+.number{
+    font-size: 24px;
+    padding-right: 10px;
+}
+
+.name {
+    font-size: 24px;
+    padding-right: 20px;
+}
+
+.point{
+    font-size: 24px;
+    margin-left: auto;
+}

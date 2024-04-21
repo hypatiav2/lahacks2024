@@ -4,14 +4,17 @@
 import './App.css'
 import DestinationScreen from './DestinationScreen'
 import HomeScreen from './HomeScreen'
+import LeaderScreen from './LeaderScreen'
 import Upload from './Components/PhotoUpload'
+
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    
-    <DestinationScreen />
+    <>
+    <LeaderScreen /> 
+    </>
 
   )
 }
