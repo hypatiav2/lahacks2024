@@ -20,9 +20,8 @@
 }
 
 .time-text {
-    position: absolute;
     color: #000;
     right: 0;
     top: 550px;
-    padding-right: 50px;
+    padding-left: 300px;
 }

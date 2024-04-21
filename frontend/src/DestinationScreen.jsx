@@ -3,6 +3,7 @@ import mapboxgl from 'mapbox-gl'; // eslint-disable-line import/no-webpack-loade
 import './DestinationScreen.css'
 import './Components/TimerWithProgressBar'; // Adjust the path if necessary
 import TimerWithProgressBar from './Components/TimerWithProgressBar';
+import earthIcon from './assets/earth-icon.png'
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibGF2aW5pYWxlaSIsImEiOiJjbHY3dXplOGYwM2U4MnFudHR5MjA0bTk4In0.ymT5DfEXRZHV4EFytkCLbA';
 
@@ -26,7 +27,10 @@ export default function DestinationScreen() {
 
   return (
     <div>
-       <h1 className="title">destination</h1>
+        <div className='headline'>
+          <img src={earthIcon} alt="Image" className='earthIcon' />
+          <h1 className="title">destination</h1>
+        </div>
        <div ref={mapContainer} className="map-container" />
        <div className="white-rectangle"></div>
        <TimerWithProgressBar initTime={120} />

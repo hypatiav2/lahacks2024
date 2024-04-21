@@ -8,11 +8,15 @@
 }
 
 .title {
-  padding-top: 40px;
   padding-left: 30px;
   text-align: left;
   color: #004643;
   font-size: 32pt;
+}
+
+.headline{
+  display: flex;
+  margin-top: 30px;
 }
 
 .map-container {
@@ -40,6 +44,12 @@
   position: relative;
   z-index: 2;
 }
+
+.earthIcon{
+  height: 50px;
+  /* padding-right: 200px; */
+}
+
 
 body{
   background-color: #fff;
