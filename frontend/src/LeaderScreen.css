@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+.homeContainer{
+    position: relative;
+    z-index: 999;
+}
+
+.homeIcon{
+    top: 10px;
+    right: 10px;
+    position: fixed;
+    width: 20px;
+    height: auto;
+    margin-right: auto;
+
+}
+
+body{
+    background-color: #FFF;
+}
+
+.Header{
+    display: flex;
+}
+
+.leaderBoardIcon{
+    width: auto;
+    height: 60px;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-bottom: 30px;
+}
+
+.leaderBoard{
+    font-size: 40px;
+    color: #004643;
+    text-align: left;
+    margin-left: -30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    font-family: Lato;
+}
+
+.share{
+    color: #004643;
+    font-size: 20px;
+    padding-top: 15px;
+    font-family: 'Lato';
+}
+
+.discordIcon{
+    padding-top: -50px;
+    width: 35px;
+    height: auto;
+    padding-right: 10px;
+}
+
+.linkedinIcon{
+    padding-top: -50px;
+    width: 35px;
+    height: auto;
+    padding-right: 10px;
+}
+
+.githubIcon{
+    padding-top: -50px;
+    width: 35px;
+    height: auto;
+    padding-right: 10px;
+}
+

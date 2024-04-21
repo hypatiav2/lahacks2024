@@ -3,13 +3,14 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import HomeScreen from './HomeScreen'
+import LeaderScreen from './LeaderScreen'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-    <HomeScreen />
+    <LeaderScreen /> 
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
