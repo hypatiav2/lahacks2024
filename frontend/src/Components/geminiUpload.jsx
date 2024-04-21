@@ -1,4 +1,5 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import { Namecontext } from '../App'
 
 // Access your API key (see "Set up your API key" above)
 const genAI = new GoogleGenerativeAI("AIzaSyBwH26ZCJ0qza_at3zkXWWG8gXNPSbwfaQ");
@@ -37,6 +38,5 @@ export default async function CheckPhoto(challenge, setContent) {
     const text = response.text();
     console.log(text);
     setContent(text)
-
   }
   

@@ -10,8 +10,8 @@ import { Namecontext } from './App'
 
 
 export default function HomeScreen() {
-  const { firstName, setFirstName } = useContext(Namecontext);
-
+  const { firstName, setFirstName, points, setPoints } = useContext(Namecontext);
+  console.log("points", points);
   return (
     <div className="container">
       <div className='headline'>
@@ -33,7 +33,7 @@ export default function HomeScreen() {
       </div>
       <div className="homeButtonContainer"> {/* Open HomeButtonContainer div */}
         <Link to="/leaderboard">
-          <HomeButton description="score: 100" className="HomeButton" />
+          <HomeButton description={"score: 25"} className="HomeButton" />
          </Link>
           <HomeButton description="friends" className="HomeButton" />
       </div> {/* Close HomeButtonContainer div */}

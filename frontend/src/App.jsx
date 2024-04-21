@@ -13,6 +13,8 @@ import PushNotificationComponent from './Components/notifs'
 import React, { createContext, useState } from 'react';
 
 export const Namecontext = createContext({
+  points: "0",
+  setPoints:  () => {},
   firstName: "Melody",
   setFirstName: () => {}
 });
@@ -21,10 +23,11 @@ function App() {
   // const [count, setCount] = useState(0)
   
   const [firstName, setFirstName] = useState('');
-  const name = {firstName, setFirstName}
-  
+  const [points, setPoints] = useState('');
+  const userdata = {firstName, setFirstName, points, setPoints}
+
   return (
-    <Namecontext.Provider value={name}>
+    <Namecontext.Provider value={userdata}>
       <Routes>
           <Route path="/" element={<SignUpScreen />} />
           <Route path="home" element={<HomeScreen />} />
