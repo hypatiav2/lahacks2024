@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl, { Control } from 'mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import './DestinationScreen.css'
@@ -9,7 +10,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibGF2aW5pYWxlaSIsImEiOiJjbHY3dXplOGYwM2U4MnFud
 
 export default function DestinationScreen() {
 
-    const mapContainer = useRef(null);
+  const mapContainer = useRef(null);
   const map = useRef(null);
   const [lng, setLng] = useState(-118.440);
   const [lat, setLat] = useState(34.075);
