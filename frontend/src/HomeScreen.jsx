@@ -13,7 +13,7 @@ export default function HomeScreen() {
   const { firstName, setFirstName, points, setPoints } = useContext(Namecontext);
   console.log("points", points);
   return (
-    <div className="container">
+    <div>
       <div className='headline'>
         <img src={grassHopper} alt="Image" className='GrassHopper' />
       </div>
