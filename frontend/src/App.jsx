@@ -4,14 +4,15 @@
 import './App.css'
 import HomeScreen from './HomeScreen'
 import Upload from './Components/PhotoUpload'
+import ChallengeScreen from './ChallengeScreen'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-    <HomeScreen />
-    <Upload />
+    <ChallengeScreen />
+    {/* <Upload /> */}
 
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
