@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.7.1",
     "firebase": "^10.11.0",
     "leaflet": "^1.9.4",
     "mapbox-gl": "^3.3.0",

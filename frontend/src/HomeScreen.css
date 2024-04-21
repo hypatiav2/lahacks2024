@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body{
+    background-color: #b0d4b0;
+    font-family: 'Lato';
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.headline{
+    display: flex;
+    padding-left: -500px;
+    align-items: left;
+    width: 90px;
+}
+
+.GrassHopper{
+    width: 500px;
+    height: auto;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+/* .brand{
+    color: #004643;
+    letter-spacing: 5px;
+    font-size: 36px;
+    font-weight: 900;
+    padding-top: 30px;
+    padding-left: -50px;
+} */
+
+.name{
+    padding-top: -50px;
+    margin-top: -40px;
+    font-size: 40px;
+    text-align: left;
+    color: #004643;
+    margin-bottom: -8px;
+    padding-left: 5px;
+    font-weight: 1300;
+    /* bolder */
+}
+
+.slogan{
+    margin-top: -5px;
+    margin-bottom: 20px;
+    color: #004643;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 5px;
+    /*align */
+}
+
+.touchGrass{
+    color: #004643;
+    background-color: #FFF;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 68px;
+    display: inline-block;
+    width: auto;
+    border-radius: 20px;
+    font-weight: 900;
+}
+
+.streak{
+    text-align: left;
+    color: #004643;
+    padding-left: 5px;
+    padding-top: 20px;
+    font-size: 24px;
+    padding-bottom: 0px;
+}
+
+.circle{
+    padding-top: -5px;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: 15px solid #FFF; /* Set border style */
+    background-color:  transparent;
+    border-radius: 50%; 
+    margin: 0 auto;
+}
+
+.circleContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2%;
+    margin: auto;
+}
+
+.circleText{
+    margin: auto;    
+    color: #004643;
+    font-size: 64px;
+    font-weight: 500;
+    resize: fit-content;
+    align-items: center;
+    justify-content: center;
+    /* resize so it always fits */
+}
+
+.Grass{
+    width: auto;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeButtonContainer{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    border-radius: 20px;
+    color: #004643;
+}
+
+
+/* name */
+/* .name{ 
+    color: #004643;
+    text-align: left;
+    padding-left: 20px;
+    padding: 20px;
+    margin: 0;
+    font-size: 40px;
+    font-family:'Lato';
+} */
+
+
+/* it's time to touch grass */
+/* h3{
+    color: #004643;
+} */
+
+/* streak */
+/* h2{
+    color: #004643;
+} */
+
+/* button{
+    background-color: #FFFF;
+    color: #004643;
+} */
+
+/* score, friend */
+/* .HomeButtonContainer{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}  */
+
