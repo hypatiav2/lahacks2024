@@ -83,7 +83,7 @@ function SignUpScreen() {
 
 
   return (
-    <body className="signUp">
+    <div className="signUp">
       <div className = 'wholePage'>
         <img src={GrassHopper} className='GrassHopper' />
         {/* <h1 className = 'welcome' >welcome</h1> */}
@@ -118,7 +118,7 @@ function SignUpScreen() {
             <button className="SignUp" onClick={handleSignUp}>sign up</button>
           </Link>
       </div>
-    </body>
+    </div>
     );
   }
   
