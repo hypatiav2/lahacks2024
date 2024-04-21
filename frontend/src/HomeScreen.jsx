@@ -3,6 +3,7 @@ import HomeButton from './Components/HomeButton';
 import './HomeScreen.css';
 import grassHopper from './assets/Group.png'
 import grass from "./assets/grass.png"
+import { Link } from 'react-router-dom';
 
 export default function HomeScreen() {
   const name = 'melody';
@@ -15,7 +16,9 @@ export default function HomeScreen() {
         </div>
         <h1 className='name'>{name},</h1>
         <h3 className='slogan'>it's time to touch grass.</h3>
-        <button className='touchGrass'>begin grass touching</button>
+        <Link to="/map">
+          <button className='touchGrass'>begin grass touching</button>
+        </Link>
         <h2 className = 'streak'>streak:</h2>
         <div className="circle">
           <div className='circleContent'>
@@ -24,7 +27,9 @@ export default function HomeScreen() {
           </div>
         </div>
         <div className="homeButtonContainer"> {/* Open HomeButtonContainer div */}
-          <HomeButton description="score: 100" className="HomeButton" />
+          <Link to="/leaderboard">
+            <HomeButton description="score: 100" className="HomeButton" />
+          </Link>
           <HomeButton description="friends" className="HomeButton" />
         </div> {/* Close HomeButtonContainer div */}
         

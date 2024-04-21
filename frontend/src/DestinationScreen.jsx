@@ -4,7 +4,8 @@ import mapboxgl, { Control } from 'mapbox-gl'; // eslint-disable-line import/no-
 import './DestinationScreen.css'
 import './Components/TimerWithProgressBar';
 import TimerWithProgressBar from './Components/TimerWithProgressBar';
-import earthIcon from './assets/earth-icon.png'
+import earthIcon from './assets/earth-icon.png';
+import { Link } from 'react-router-dom';
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibGF2aW5pYWxlaSIsImEiOiJjbHY3dXplOGYwM2U4MnFudHR5MjA0bTk4In0.ymT5DfEXRZHV4EFytkCLbA';
 
@@ -62,7 +63,9 @@ export default function DestinationScreen() {
       
        <div className="loc-data"> Longitude: {lng} | Latitude: {lat} | Zoom: {zoom} </div>
        <TimerWithProgressBar initTime={30} />
-       <button className="hereButton">im here</button>
+       <Link to="/challenge">
+          <button className="hereButton">im here</button>
+       </Link>
     </div>
   );
 }
