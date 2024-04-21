@@ -11,8 +11,6 @@ function App() {
   return (
     <>
     <HomeScreen />
-    <h3 id="challenge"></h3>
-    <h3 id="status"></h3> 
     <Upload />
 
       {/* <div>
