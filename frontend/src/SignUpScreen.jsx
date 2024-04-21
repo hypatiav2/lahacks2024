@@ -111,9 +111,9 @@ function SignUpScreen() {
             placeholder="password"
           />
         </div>
-        {/* <Link to="/home"> */}
+        <Link to="/home">
           <button onClick={handleSignUp}>sign up</button>
-        {/* </Link> */}
+        </Link>
       </div>
     );
   }
