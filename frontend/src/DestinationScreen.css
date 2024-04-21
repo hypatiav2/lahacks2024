@@ -39,17 +39,17 @@
 
 .white-rectangle {
   background-color: #fff;
+  color: #004643;
   height: 70px;
   width: 100%;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .earthIcon{
   height: 50px;
   /* padding-right: 200px; */
 }
-
 
 body{
   background-color: #fff;

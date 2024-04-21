@@ -23,7 +23,16 @@ export default function DestinationScreen() {
       center: [lng, lat],
       zoom: zoom
     });
+
+    map.current.on('move', () => {
+      setLng(map.current.getCenter().lng.toFixed(4));
+      setLat(map.current.getCenter().lat.toFixed(4));
+      setZoom(map.current.getZoom().toFixed(2));
+    });
+
   });
+
+
 
   return (
     <div>
@@ -31,8 +40,10 @@ export default function DestinationScreen() {
           <img src={earthIcon} alt="Image" className='earthIcon' />
           <h1 className="title">destination</h1>
         </div>
-       <div ref={mapContainer} className="map-container" />
-       <div className="white-rectangle"></div>
+       
+      <div ref={mapContainer} className="map-container" />
+      
+       <div className="white-rectangle"> Longitude: {lng} | Latitude: {lat} | Zoom: {zoom} </div>
        <TimerWithProgressBar initTime={30} />
        <button className="hereButton">im here</button>
     </div>
