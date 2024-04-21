@@ -12,5 +12,5 @@ export default function HomeButton(props){
 
 HomeButton.propTypes = {
   //image: PropTypes.string.isRequired,
-  description: PropTypes.func.isRequired,
+  description: PropTypes.string.isRequired,
 };

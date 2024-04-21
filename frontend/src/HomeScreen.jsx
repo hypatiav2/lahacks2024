@@ -4,7 +4,7 @@ import HomeButton from './Components/HomeButton';
 import './HomeScreen.css';
 import grassHopper from './assets/Group.png'
 import grass from "./assets/grass.png"
-
+import PushNotificationComponent from './Components/notifs'
 // const styles = StyleSheet.create({
 //   container: {
 //     flex: 1,
@@ -52,7 +52,6 @@ export default function HomeScreen() {
   const name = 'melody';
 
   return (
-    <body>
       <div className="container">
         <div className='headline'>
           <img src={grassHopper} alt="Image" className='GrassHopper' />
@@ -61,9 +60,9 @@ export default function HomeScreen() {
         <h3 className='slogan'>it's time to touch grass.</h3>
         <button className='touchGrass'>begin grass touching</button>
         <h2 className = 'streak'>streak:</h2>
-        <div class="circle">
-          <div class='circleContent'>
-            <p class="circleText">5</p>
+        <div className="circle">
+          <div className='circleContent'>
+            <p className="circleText">5</p>
             <img src={grass} className='Grass' />
           </div>
         </div>
@@ -71,7 +70,7 @@ export default function HomeScreen() {
           <HomeButton description="score: 100" className="HomeButton" />
           <HomeButton description="friends" className="HomeButton" />
         </div> {/* Close HomeButtonContainer div */}
+        <PushNotificationComponent />
       </div>
-    </body>
   )
 };
